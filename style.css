@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	display: grid;
+	grid-template-columns: 33vw 34vw 33vw;
+	grid-template-rows: 70px 100px 250px 200px 300px 150px;
+	grid-template-areas:
+	'contact nom photo'
+	'contact titre photo'
+	'projets projets projets'
+	'formation formation formation'
+	'competences competences competences'
+	'loisirs loisirs loisirs';
+	position: relative;
+}
+
+.titre {
+	grid-area: titre;
+}
+
+.nom {
+	grid-area: nom;
+}
+
+img {
+	grid-area: photo;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.projets, .formation, .competences, .loisirs {
+	width: 60vw;
+	margin: auto;
+}
+
+.projets {
+	grid-area: projets;
+}
+
+.formation {
+	grid-area: formation;
+}
+
+.competences {
+	grid-area: competences;
+}
+
+.loisirs {
+	grid-area: loisirs;
+}
